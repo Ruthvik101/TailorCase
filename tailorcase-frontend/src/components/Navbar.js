@@ -1,27 +1,4 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
 
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-//       <div className="container">
-//         <Link className="navbar-brand" to="/">TailorEase</Link>
-//         <div className="collapse navbar-collapse">
-//           <ul className="navbar-nav ml-auto">
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/login">Login</Link>
-//             </li>
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/signup">Sign Up</Link>
-//             </li>
-//           </ul>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
 
 
 
@@ -46,8 +23,8 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className="nav-links">
           <li><Link to="/dashboard">Dashboard</Link></li>
-          <li><Link to="/orders">Orders</Link></li>
-          <li><Link to="/bookings">Bookings</Link></li>
+          <li><Link to="/order">Orders</Link></li>
+          <li><Link to="/booking">Bookings</Link></li>
           <li><Link to="/tracking">Track Order</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
           {userType === "tailor" && <li><Link to="/appointments">Appointments</Link></li>}

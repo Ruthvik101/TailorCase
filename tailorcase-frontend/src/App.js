@@ -1,28 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
 
 
 import React from "react";
@@ -36,6 +12,8 @@ import Dashboard from "./pages/Dashboard";
 import OrderForm from "./pages/OrderForm";
 import Booking from "./pages/Booking";
 import OrderTracking from "./pages/OrderTracking";
+import ContactSection from "./pages/ContactSection";
+//import ContactSection from "./pages/ContactSection";
 
 function App() {
   return (
@@ -47,8 +25,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/order" element={<OrderForm />} />
-        <Route path="/booking" element={<Booking />} />
+        <Route path="/Booking" element={<Booking />} />
         <Route path="/order-tracking" element={<OrderTracking />} />
+        <Route path="/contact" element={<ContactSection />} />
       </Routes>
       <Footer />
     </div>

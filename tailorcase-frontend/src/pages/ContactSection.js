@@ -23,10 +23,14 @@ const ContactSection = () => {
           alignItems: 'center',
           color: 'white',
           textAlign: 'center',
+          padding: '0',
+          margin: '0',
+          overflow: 'hidden',
+          
         }}
       >
         <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>Contact</h1>
-        <p style={{ maxWidth: '800px' }}>
+        <p style={{ maxWidth: '900px' }}>
           If you have any questions or need assistance with our services, don’t hesitate to reach out. 
           We’re here to help with all your tailoring needs.
         </p>

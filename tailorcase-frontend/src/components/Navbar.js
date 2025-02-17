@@ -25,8 +25,9 @@ const Navbar = () => {
           <li><Link to="/dashboard">Dashboard</Link></li>
           <li><Link to="/order">Orders</Link></li>
           <li><Link to="/booking">Bookings</Link></li>
-          <li><Link to="/tracking">Track Order</Link></li>
+          
           <li><Link to="/contact">Contact Us</Link></li>
+          <li><Link to="/pricing">Pricing</Link></li>
           {userType === "tailor" && <li><Link to="/appointments">Appointments</Link></li>}
         </ul>
 

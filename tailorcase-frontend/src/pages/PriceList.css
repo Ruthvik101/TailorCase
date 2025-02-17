@@ -1,0 +1,255 @@
+/* 
+
+the one from GPT
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  
+  .table th,
+  .table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .table-dark th {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  
+  .btn-group .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  
+  .payment-methods {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .payment-methods h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .payment-methods p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .list-group-item {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    padding: 8px 0;
+  }
+  
+  .list-group-item::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .btn-group .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .payment-methods {
+      padding: 15px;
+    }
+  
+    .payment-methods h2 {
+      font-size: 1.3rem;
+    }
+  }
+   */
+
+
+
+
+/* the one from blackbox.ai */
+   /* .payment-methods {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-methods h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .payment-option {
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .payment-option img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .payment-option p {
+    font-size: 1.1rem;
+  }
+  
+  .payment-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1rem;
+  }
+  
+  .additional-info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1rem;
+  } */
+
+
+  /* caploit */
+  .container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .btn-group .btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-methods {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-methods h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .payment-option {
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .payment-option img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .payment-option p {
+    font-size: 1.1rem;
+  }
+  
+  .payment-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .payment-options {
+      flex-direction: column;
+      align-items: center;
+    }
+    .payment-option {
+      margin: 0.5rem;
+    }
+  }
+  

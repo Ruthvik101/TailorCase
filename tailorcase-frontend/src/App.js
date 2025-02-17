@@ -14,6 +14,7 @@ import Booking from "./pages/Booking";
 import OrderTracking from "./pages/OrderTracking";
 import ContactSection from "./pages/ContactSection";
 //import ContactSection from "./pages/ContactSection";
+import Pricing from "./pages/PriceList";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Booking" element={<Booking />} />
         <Route path="/order-tracking" element={<OrderTracking />} />
         <Route path="/contact" element={<ContactSection />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
       <Footer />
     </div>

@@ -6,7 +6,7 @@ import backgroundImage from '../assets/material.jpg';
 
 const ContactSection = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" style={{maxWidth:"1400px"}}>
       <div className="text-center mb-4">
         
         <div
@@ -74,7 +74,7 @@ const ContactSection = () => {
       </div>
 
       {/* Contact Form and Map Section */}
-      <div className="container mt-4">
+      <div className="container mt-4" >
         <div className="row">
           {/* Contact Form Section */}
           <div className="col-md-6">

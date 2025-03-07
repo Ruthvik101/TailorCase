@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
@@ -11,7 +8,7 @@ import Testimonials from "../components/Testimonials";
 import tailoringProcess from "../assets/tailoring-processs_1098-17986.avif";
 import slide2 from "../assets/slide2.avif";
 import slide3 from "../assets/slide3.jpg";
-import tailoringItems from "../assets/aboutus.jpg"; 
+import tailoringItems from "../assets/items.webp"; 
 
 // Import icons/images for service steps
 import bookIcon from "../assets/booking_icon.png"; 
@@ -25,12 +22,12 @@ import Alteration from "../assets/alteration.png";
 
 const Home = () => {
   return (
-    <div className="container text-center mt-5">
+    <div className="container text-center mt-5" style={{ maxWidth: "1800px", boxShadow: "none" }}>
       <h1>Welcome to TailorEase</h1>
       <p>Your one-stop destination for custom tailoring & local booking.</p>
 
       {/* Bootstrap Carousel */}
-      <div id="carouselExampleDark" className="carousel carousel-dark slide mt-4">
+      <div id="carouselExampleDark" className="carousel carousel-dark slide mt-4" style={{maxWidth:"1800px"}}>
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -38,13 +35,13 @@ const Home = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="1000">
-            <img src={tailoringProcess} className="d-block w-100" alt="First slide" />
+            <img src={tailoringProcess} className="d-block w-100" alt="First slide" style={{ height: "500px", objectFit: "cover" }}/>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={slide2} className="d-block w-100" alt="Second slide" />
+            <img src={slide2} className="d-block w-100" alt="Second slide" style={{ height: "500px", objectFit: "cover" }}/>
           </div>
           <div className="carousel-item">
-            <img src={slide3} className="d-block w-100" alt="Third slide" />
+            <img src={slide3} className="d-block w-100" alt="Third slide" style={{ height: "500px", objectFit: "cover" }}/>
           </div>
         </div>
       </div>
@@ -56,13 +53,44 @@ const Home = () => {
       </div>
 
       {/* Company Profile Section */}
-      <div className="container-fluid text-center my-5">
-        <h2 className="fw-bold">PREMIUM DOORSTEP TAILORING SERVICE</h2>
-        <p className="text-muted fs-5">
+      <div className="container-fluid text-center my-5" style={{maxWidth:"1500px"}}>
+        <h1 className="fw-bold">PREMIUM DOORSTEP TAILORING SERVICE-</h1>
+        <h1>TAILOR SERVICE AT YOUR HOME</h1>
+        <hr class="dotted-line"></hr>
+
+        <p className="text-muted fs-5" style={{ fontWeight: 400 }}>
           Looking for a hassle-free tailoring experience? Your Tailor offers professional doorstep tailoring services where expert tailors come to your home for measurements, fittings, and custom stitching. Enjoy high-quality, designer tailoring without stepping out!
         </p>
       </div>
 
+      <div className="container my-5 p-0 border-0 shadow-none" style={{ maxWidth: "1500px" }}>
+      <div className="row align-items-center"  style={{ boxShadow: "none" }}>
+        {/* Text Section */}
+        <div className="col-md-6">
+          <h2 className="fw-bold">Our Company Profile</h2>
+          <hr className="my-2 w-50" />
+          <p className="text-muted fs-5">
+            Whatever tailoring services you need, <b>YourTailor.in</b> is there
+            for you to fulfill your requirements for all occasions. We provide
+            services from basic tailoring to premium designer dresses. We are
+            experts in selecting dress material, designing dresses as per your
+            taste, hand work, and stitching.
+          </p>
+          <button className="btn btn-danger rounded-pill px-4 py-2">
+            Know More
+          </button>
+        </div>
+
+        {/* Image Section */}
+        <div className="col-md-6 text-center">
+          <img
+            src={tailoringItems} // Update this path to your actual image
+            alt="Tailoring Items"
+            className="img-fluid" style={{width:"700px",height:"500px",filter: "brightness(100%) contrast(100%)"}}
+          />
+        </div>
+      </div>
+    </div>
       {/* Service Steps Section */}
       <div className="container-fluid text-center my-5">
         <h2 className="fw-bold">How Our Doorstep Tailor Service Works?</h2>
@@ -143,5 +171,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
